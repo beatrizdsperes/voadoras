@@ -3,14 +3,20 @@
 <head>
     <title>Cartas Voadoras</title>
     <script src="../../lib/Brython2.1.0-20140419-113919/brython.js"></script>
-    <script type="text/python3" src="vista.py"></script>
+    <script type="text/python3" src="control.py"></script>
     <script type="text/python3">
         from browser import html, doc
-        main(html, doc)
+        main(html, doc)\
     </script>
+
 </head>
 <body onload="brython()">
-    <div id="main"></div>
+    <div id="tudo">
+        <div id="preto" style="position:absolute; left:0px; top:0px; width:2000px; height:2000px; background-color:black; opacity:1;">
+        </div>
+        <div id="main" style="position:absolute; left:0px; top:0px; width:2000px; height:2000px; background-color:white; opacity:1; transition:opacity 2s;">
+        </div>
+    </div>
 
 </body>
 </html>
